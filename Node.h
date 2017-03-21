@@ -1,6 +1,5 @@
-<pre>
 /*   	 The include file for Node.cpp
- */	 
+ */
 
 #ifndef _Node_
 #define _Node_
@@ -21,5 +20,3 @@ public:
 	string gets();
 };
 #endif
-
-</pre>

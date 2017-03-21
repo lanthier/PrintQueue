@@ -1,14 +1,13 @@
-<pre>
 /* A class that creates a queue of Nodes containing strings
- */	 
+ */
 #include "Queue.h"
 #include "Node.h"
 #include <string>
 #include <iostream>
 using namespace std;
 #define NULL 0
-Queue::Queue() { 
-	head = NULL; 
+Queue::Queue() {
+	head = NULL;
 	tail = NULL;
 }
 Queue::~Queue () {delete head; }
@@ -27,8 +26,6 @@ string  Queue:: DEQUEUE() {
 	head = head->getNext();
 	n->setNext(NULL); //for memory
 	delete n; //for memory
-	return a; 
+	return a;
 }
 bool Queue::ISEMPTY() { return !head; }
-
-</pre>

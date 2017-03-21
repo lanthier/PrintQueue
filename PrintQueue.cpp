@@ -1,7 +1,6 @@
-<pre>
-	/*   Alexander Lanthier Northern Michigan University CS222 Andy Poe
+/*   Alexander Lanthier Northern Michigan University CS222 Andy Poe
  *	 This program takes in a file input of printer queues and prints them to console in the order of completion
-*/	 
+*/
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -50,7 +49,7 @@ int main (int argc, char **argv) {
 	system("pause");
 	return 0;
 }
-/*This method converts the clock time into minutes passed 
+/*This method converts the clock time into minutes passed
   since 1:00 for up to a 12-hour period.
 */
 int minutesPassed(string time) {
@@ -72,7 +71,7 @@ string getTime(int minutes) {
 	if(minutes==720) return "1:00";
 	stringstream convert;
 	int firstNumber = 1, secondNumber = 0;
-	while(minutes != 0) { 
+	while(minutes != 0) {
 		if(minutes >= 60) { firstNumber++; minutes-=60; }//Get number of hours by subtracting by 60 min. at a time
 		else {secondNumber++; minutes--;}//Get number of minutes by subtracting single min. down to zero after hours are done
 	}
@@ -87,5 +86,3 @@ string getTime(int minutes) {
 }
 //This method takes in a string, and returns the int version of it
 int toInt(string a) {int b; istringstream c(a); if(!(c>>b)) b=0; return b; }
-
-</pre>

@@ -1,6 +1,5 @@
-<pre>
 /* An object used to build a queue that holds string data
- */	 
+*/
 #include "Node.h"
 #include "Queue.h"
 #include <iostream>
@@ -14,4 +13,3 @@ Node*Node::getNext() { return next; }
 void Node::setNext(Node *i) { next = i; }
 
 string Node::gets() { return s; }
-</pre>

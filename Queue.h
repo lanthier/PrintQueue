@@ -1,6 +1,5 @@
-<pre>
 /* The include file for Queue.cpp
- */	 
+ */
 
 #ifndef _Queue_
 #define _Queue_
@@ -23,5 +22,3 @@ public:
 };
 
 #endif
-
-</pre>
